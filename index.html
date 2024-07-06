@@ -6,6 +6,7 @@
     <title>JITC</title>
 
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
@@ -13,433 +14,462 @@
     <script src="script.js" defer></script>
   </head>
   <body>
-    <div class="top__bar_wrapper">
-      <div class="top__bar__container">
-        <ul class="top__bar__list">
-          <li>
-            <a href="#">
-              <?xml version="1.0" ?><!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
-              <svg
-                height="100%"
-                style="
-                  fill-rule: evenodd;
-                  clip-rule: evenodd;
-                  stroke-linejoin: round;
-                  stroke-miterlimit: 2;
-                "
-                version="1.1"
-                viewBox="0 0 512 512"
-                width="100%"
-                xml:space="preserve"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:serif="http://www.serif.com/"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-              >
-                <path
-                  d="M512,257.555c0,-141.385 -114.615,-256 -256,-256c-141.385,0 -256,114.615 -256,256c0,127.777 93.616,233.685 216,252.89l0,-178.89l-65,0l0,-74l65,0l0,-56.4c0,-64.16 38.219,-99.6 96.695,-99.6c28.009,0 57.305,5 57.305,5l0,63l-32.281,0c-31.801,0 -41.719,19.733 -41.719,39.978l0,48.022l71,0l-11.35,74l-59.65,0l0,178.89c122.385,-19.205 216,-125.113 216,-252.89Z"
-                  style="fill-rule: nonzero"
-                />
-              </svg>
-            </a>
-          </li>
+    <header>
+      <div class="header__navigation">
+        <div class="top__bar_wrapper">
+          <div class="top__bar__container">
+            <ul class="top__bar__list">
+              <li>
+                <a href="#">
+                  <?xml version="1.0" ?><!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+                  <svg
+                    height="100%"
+                    style="
+                      fill-rule: evenodd;
+                      clip-rule: evenodd;
+                      stroke-linejoin: round;
+                      stroke-miterlimit: 2;
+                    "
+                    version="1.1"
+                    viewBox="0 0 512 512"
+                    width="100%"
+                    xml:space="preserve"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:serif="http://www.serif.com/"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                  >
+                    <path
+                      d="M512,257.555c0,-141.385 -114.615,-256 -256,-256c-141.385,0 -256,114.615 -256,256c0,127.777 93.616,233.685 216,252.89l0,-178.89l-65,0l0,-74l65,0l0,-56.4c0,-64.16 38.219,-99.6 96.695,-99.6c28.009,0 57.305,5 57.305,5l0,63l-32.281,0c-31.801,0 -41.719,19.733 -41.719,39.978l0,48.022l71,0l-11.35,74l-59.65,0l0,178.89c122.385,-19.205 216,-125.113 216,-252.89Z"
+                      style="fill-rule: nonzero"
+                    />
+                  </svg>
+                </a>
+              </li>
 
-          <li>
-            <a href="#">
-              <?xml version="1.0" ?><svg
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                version="1.1"
-                id="Layer_1"
-                width="24px"
-                height="24px"
-                viewBox="0 0 24 24"
-                style="enable-background: new 0 0 24 24"
-                xml:space="preserve"
-              >
-                <path
-                  d="M14.095479,10.316482L22.286354,1h-1.940718l-7.115352,8.087682L7.551414,1H1l8.589488,12.231093L1,23h1.940717  l7.509372-8.542861L16.448587,23H23L14.095479,10.316482z M11.436522,13.338465l-0.871624-1.218704l-6.924311-9.68815h2.981339  l5.58978,7.82155l0.867949,1.218704l7.26506,10.166271h-2.981339L11.436522,13.338465z"
-                />
-              </svg>
-            </a>
-          </li>
+              <li>
+                <a href="#">
+                  <?xml version="1.0" ?><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    version="1.1"
+                    id="Layer_1"
+                    width="24px"
+                    height="24px"
+                    viewBox="0 0 24 24"
+                    style="enable-background: new 0 0 24 24"
+                    xml:space="preserve"
+                  >
+                    <path
+                      d="M14.095479,10.316482L22.286354,1h-1.940718l-7.115352,8.087682L7.551414,1H1l8.589488,12.231093L1,23h1.940717  l7.509372-8.542861L16.448587,23H23L14.095479,10.316482z M11.436522,13.338465l-0.871624-1.218704l-6.924311-9.68815h2.981339  l5.58978,7.82155l0.867949,1.218704l7.26506,10.166271h-2.981339L11.436522,13.338465z"
+                    />
+                  </svg>
+                </a>
+              </li>
 
-          <li>
-            <a href="#">
-              <?xml version="1.0" ?><!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
-              <svg
-                enable-background="new 0 0 56.693 56.693"
-                height="56.693px"
-                id="Layer_1"
-                version="1.1"
-                viewBox="0 0 56.693 56.693"
-                width="56.693px"
-                xml:space="preserve"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-              >
-                <g>
-                  <path
-                    d="M30.071,27.101v-0.077c-0.016,0.026-0.033,0.052-0.05,0.077H30.071z"
-                  />
-                  <path
-                    d="M49.265,4.667H7.145c-2.016,0-3.651,1.596-3.651,3.563v42.613c0,1.966,1.635,3.562,3.651,3.562h42.12   c2.019,0,3.654-1.597,3.654-3.562V8.23C52.919,6.262,51.283,4.667,49.265,4.667z M18.475,46.304h-7.465V23.845h7.465V46.304z    M14.743,20.777h-0.05c-2.504,0-4.124-1.725-4.124-3.88c0-2.203,1.67-3.88,4.223-3.88c2.554,0,4.125,1.677,4.175,3.88   C18.967,19.052,17.345,20.777,14.743,20.777z M45.394,46.304h-7.465V34.286c0-3.018-1.08-5.078-3.781-5.078   c-2.062,0-3.29,1.389-3.831,2.731c-0.197,0.479-0.245,1.149-0.245,1.821v12.543h-7.465c0,0,0.098-20.354,0-22.459h7.465v3.179   c0.992-1.53,2.766-3.709,6.729-3.709c4.911,0,8.594,3.211,8.594,10.11V46.304z"
-                  />
-                </g>
-              </svg>
-            </a>
-          </li>
-        </ul>
-        <ul class="top__bar__list">
-          <li>
-            <a href="#">
-              <?xml version="1.0" ?><svg
-                height="48"
-                viewBox="0 0 48 48"
-                width="48"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M0 0h48v48h-48z" fill="none" />
-                <path
-                  d="M13.25 21.59c2.88 5.66 7.51 10.29 13.18 13.17l4.4-4.41c.55-.55 1.34-.71 2.03-.49 2.24.74 4.65 1.14 7.14 1.14 1.11 0 2 .89 2 2v7c0 1.11-.89 2-2 2-18.78 0-34-15.22-34-34 0-1.11.9-2 2-2h7c1.11 0 2 .89 2 2 0 2.49.4 4.9 1.14 7.14.22.69.06 1.48-.49 2.03l-4.4 4.42z"
-                />
-              </svg>
+              <li>
+                <a href="#">
+                  <?xml version="1.0" ?><!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+                  <svg
+                    enable-background="new 0 0 56.693 56.693"
+                    height="56.693px"
+                    id="Layer_1"
+                    version="1.1"
+                    viewBox="0 0 56.693 56.693"
+                    width="56.693px"
+                    xml:space="preserve"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                  >
+                    <g>
+                      <path
+                        d="M30.071,27.101v-0.077c-0.016,0.026-0.033,0.052-0.05,0.077H30.071z"
+                      />
+                      <path
+                        d="M49.265,4.667H7.145c-2.016,0-3.651,1.596-3.651,3.563v42.613c0,1.966,1.635,3.562,3.651,3.562h42.12   c2.019,0,3.654-1.597,3.654-3.562V8.23C52.919,6.262,51.283,4.667,49.265,4.667z M18.475,46.304h-7.465V23.845h7.465V46.304z    M14.743,20.777h-0.05c-2.504,0-4.124-1.725-4.124-3.88c0-2.203,1.67-3.88,4.223-3.88c2.554,0,4.125,1.677,4.175,3.88   C18.967,19.052,17.345,20.777,14.743,20.777z M45.394,46.304h-7.465V34.286c0-3.018-1.08-5.078-3.781-5.078   c-2.062,0-3.29,1.389-3.831,2.731c-0.197,0.479-0.245,1.149-0.245,1.821v12.543h-7.465c0,0,0.098-20.354,0-22.459h7.465v3.179   c0.992-1.53,2.766-3.709,6.729-3.709c4.911,0,8.594,3.211,8.594,10.11V46.304z"
+                      />
+                    </g>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <ul class="top__bar__list">
+              <li>
+                <a href="#">
+                  <?xml version="1.0" ?><svg
+                    height="48"
+                    viewBox="0 0 48 48"
+                    width="48"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M0 0h48v48h-48z" fill="none" />
+                    <path
+                      d="M13.25 21.59c2.88 5.66 7.51 10.29 13.18 13.17l4.4-4.41c.55-.55 1.34-.71 2.03-.49 2.24.74 4.65 1.14 7.14 1.14 1.11 0 2 .89 2 2v7c0 1.11-.89 2-2 2-18.78 0-34-15.22-34-34 0-1.11.9-2 2-2h7c1.11 0 2 .89 2 2 0 2.49.4 4.9 1.14 7.14.22.69.06 1.48-.49 2.03l-4.4 4.42z"
+                    />
+                  </svg>
 
-              011-614-003
-            </a>
-          </li>
+                  011-614-003
+                </a>
+              </li>
 
-          <li>
-            <a href="#">
-              <?xml version="1.0" ?><svg
-                viewBox="0 0 512 512"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M256 352c-16.53 0-33.06-5.422-47.16-16.41L0 173.2V400C0 426.5 21.49 448 48 448h416c26.51 0 48-21.49 48-48V173.2l-208.8 162.5C289.1 346.6 272.5 352 256 352zM16.29 145.3l212.2 165.1c16.19 12.6 38.87 12.6 55.06 0l212.2-165.1C505.1 137.3 512 125 512 112C512 85.49 490.5 64 464 64h-416C21.49 64 0 85.49 0 112C0 125 6.01 137.3 16.29 145.3z"
-                />
-              </svg>
+              <li>
+                <a href="#">
+                  <?xml version="1.0" ?><svg
+                    viewBox="0 0 512 512"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M256 352c-16.53 0-33.06-5.422-47.16-16.41L0 173.2V400C0 426.5 21.49 448 48 448h416c26.51 0 48-21.49 48-48V173.2l-208.8 162.5C289.1 346.6 272.5 352 256 352zM16.29 145.3l212.2 165.1c16.19 12.6 38.87 12.6 55.06 0l212.2-165.1C505.1 137.3 512 125 512 112C512 85.49 490.5 64 464 64h-416C21.49 64 0 85.49 0 112C0 125 6.01 137.3 16.29 145.3z"
+                    />
+                  </svg>
 
-              info@jitc.co.za
-            </a>
-          </li>
+                  info@jitc.co.za
+                </a>
+              </li>
 
-          <li>
-            <a href="#">
-              <?xml version="1.0" ?><svg
-                height="24"
-                viewBox="0 0 24 24"
-                width="24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M12 2C6.486 2 2 6.486 2 12v4.143C2 17.167 2.897 18 4 18h1a1 1 0 0 0 1-1v-5.143a1 1 0 0 0-1-1h-.908C4.648 6.987 7.978 4 12 4s7.352 2.987 7.908 6.857H19a1 1 0 0 0-1 1V18c0 1.103-.897 2-2 2h-2v-1h-4v3h6c2.206 0 4-1.794 4-4 1.103 0 2-.833 2-1.857V12c0-5.514-4.486-10-10-10z"
-                />
-              </svg>
+              <li>
+                <a href="#">
+                  <?xml version="1.0" ?><svg
+                    height="24"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12 2C6.486 2 2 6.486 2 12v4.143C2 17.167 2.897 18 4 18h1a1 1 0 0 0 1-1v-5.143a1 1 0 0 0-1-1h-.908C4.648 6.987 7.978 4 12 4s7.352 2.987 7.908 6.857H19a1 1 0 0 0-1 1V18c0 1.103-.897 2-2 2h-2v-1h-4v3h6c2.206 0 4-1.794 4-4 1.103 0 2-.833 2-1.857V12c0-5.514-4.486-10-10-10z"
+                    />
+                  </svg>
 
-              Client Support
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="nav__wrapper">
-      <nav>
-        <div class="logo">
-          <a href="#">
-            <img src="images/logo/logo.png" alt="" />
-            Just In Time Computers</a
-          >
-        </div>
-        <div class="toggle__menu" id="toggle-menu">
-          <i class="bx bxs-grid-alt"></i>
-        </div>
-        <ul class="nav__list" id="nav-menu">
-          <div class="close__menu" id="close-menu">
-            <i class="bx bx-x"></i>
+                  Client Support
+                </a>
+              </li>
+            </ul>
           </div>
-          <li class="nav__item">
-            <a href="about.html" class="nav__link">Home</a>
-          </li>
-          <li class="nav__item dropdown">
-            <a href="#" class="nav__link dropdown__link"
-              >Our Services
-              <i class="bx bxs-chevron-down dropdown__icon"></i>
-            </a>
-            <!-- Mega Dropdown  -->
-            <div class="mega__menu">
-              <ul class="mega__menu__content">
-                <li class="mega__menu__item mega__menu__header">
-                  Computer Support
-                </li>
-                <li class="mega__menu__item">
-                  <div class="menu__icon">
-                    <i class="bx bx-desktop"></i>
-                  </div>
-                  <div class="mega__menu__link">
-                    <a href="#">Desktop Support</a>
-                    <p>
-                      Comprehensive troubleshooting, maintenance, and repair for
-                      desktop computers to minimize downtime and enhance
-                      productivity.
-                    </p>
-                  </div>
-                </li>
-
-                <li class="mega__menu__item">
-                  <div class="menu__icon">
-                    <i class="bx bx-laptop"></i>
-                  </div>
-                  <div class="mega__menu__link">
-                    <a href="#">Laptop Support</a>
-                    <p>
-                      Expert hardware repairs, software troubleshooting, and
-                      system upgrades to ensure optimal laptop performance.
-                    </p>
-                  </div>
-                </li>
-                <li class="mega__menu__item">
-                  <div class="menu__icon">
-                    <i class="bx bx-printer"></i>
-                  </div>
-                  <div class="mega__menu__link">
-                    <a href="#">Printer Support</a>
-                    <p>
-                      Complete assistance for printer setup, maintenance, and
-                      troubleshooting to keep your printing operations smooth.
-                    </p>
-                  </div>
-                </li>
-                <li class="mega__menu__item">
-                  <div class="menu__icon">
-                    <i class="bx bx-network-chart"></i>
-                  </div>
-                  <div class="mega__menu__link">
-                    <a href="#">Internet & Networking Support</a>
-                    <p>
-                      Reliable network setup, maintenance, and security
-                      solutions to ensure seamless connectivity and performance.
-                    </p>
-                  </div>
-                </li>
-                <li class="mega__menu__item">
-                  <div class="menu__icon">
-                    <i class="bx bx-cog"></i>
-                  </div>
-                  <div class="mega__menu__link">
-                    <a href="#">General Support</a>
-                    <p>
-                      Wide-ranging IT support for troubleshooting, maintenance,
-                      and optimization of all your technology needs.
-                    </p>
-                  </div>
-                </li>
-              </ul>
-              <ul class="mega__menu__content">
-                <li class="mega__menu__item mega__menu__header">
-                  SEO & Digital Marketing
-                </li>
-                <li class="mega__menu__item">
-                  <div class="menu__icon">
-                    <i class="bx bx-file-find"></i>
-                  </div>
-                  <div class="mega__menu__link">
-                    <a href="#">Search Engine Optimization (SEO)</a>
-                    <p>
-                      Optimize your website to rank higher on search engines,
-                      increase organic traffic, and improve online visibility.
-                    </p>
-                  </div>
-                </li>
-                <li class="mega__menu__item">
-                  <div class="menu__icon">
-                    <i class="bx bx-store-alt"></i>
-                  </div>
-                  <div class="mega__menu__link">
-                    <a href="#">Social Media Marketing</a>
-                    <p>
-                      Boost your brand presence and engage with your audience
-                      through strategic social media campaigns across various
-                      platforms.
-                    </p>
-                  </div>
-                </li>
-                <li class="mega__menu__item">
-                  <div class="menu__icon">
-                    <i class="bx bxs-business"></i>
-                  </div>
-                  <div class="mega__menu__link">
-                    <a href="#">Google Business Profile Management</a>
-                    <p>
-                      Enhance your local search presence by optimizing and
-                      managing your Google Business Profile for better
-                      visibility and customer engagement.
-                    </p>
-                  </div>
-                </li>
-              </ul>
-              <ul class="mega__menu__content">
-                <li class="mega__menu__item mega__menu__header">
-                  Website & Software development
-                </li>
-                <li class="mega__menu__item">
-                  <div class="menu__icon">
-                    <i class="bx bx-book-content"></i>
-                  </div>
-                  <div class="mega__menu__link">
-                    <a href="#">Custom Website Development</a>
-                    <p>
-                      Design and develop custom websites tailored to your
-                      business needs, ensuring a unique and engaging user
-                      experience.
-                    </p>
-                  </div>
-                </li>
-                <li class="mega__menu__item">
-                  <div class="menu__icon">
-                    <i class="bx bxl-internet-explorer"></i>
-                  </div>
-                  <div class="mega__menu__link">
-                    <a href="#">Web Application Development</a>
-                    <p>
-                      Create interactive and dynamic web applications to enhance
-                      user engagement and streamline business operations.
-                    </p>
-                  </div>
-                </li>
-                <li class="mega__menu__item">
-                  <div class="menu__icon">
-                    <i class="bx bx-devices"></i>
-                  </div>
-                  <div class="mega__menu__link">
-                    <a href="#">Mobile App Development</a>
-                    <p>
-                      Develop high-quality mobile applications for iOS and
-                      Android to reach and engage your audience on their
-                      favorite devices.
-                    </p>
-                  </div>
-                </li>
-                <li class="mega__menu__item">
-                  <div class="menu__icon">
-                    <i class="bx bx-desktop"></i>
-                  </div>
-                  <div class="mega__menu__link">
-                    <a href="#">Desktop Software Development</a>
-                    <p>
-                      Create powerful desktop applications to enhance
-                      productivity and streamline business processes.
-                    </p>
-                  </div>
-                </li>
-              </ul>
+        </div>
+        <div class="nav__wrapper">
+          <nav>
+            <div class="logo">
+              <a href="#">
+                <img src="images/logo/logo.png" alt="" />
+                Just In Time Computers</a
+              >
             </div>
-          </li>
-          <li class="nav__item">
-            <a href="#" class="nav__link">About</a>
-          </li>
-
-          <li class="nav__item dropdown">
-            <a href="#" class="nav__link dropdown__link"
-              >Our Products
-              <i class="bx bxs-chevron-down dropdown__icon"></i>
-            </a>
-            <!-- Mega Dropdown  -->
-            <div class="mega__menu">
-              <ul class="mega__menu__content">
-                <li class="mega__menu__item mega__menu__header">
-                  Point-Of-Sale Platform
-                </li>
-                <li class="mega__menu__item">
-                  <div class="menu__icon">
-                    <i class="bx bx-store-alt"></i>
-                  </div>
-                  <div class="mega__menu__link">
-                    <a href="#">KwikPos</a>
-                    <p>
-                      Streamline your retail operations with our Point of Sale
-                      platform, offering efficient sales processing, inventory
-                      management, and real-time analytics to enhance your
-                      store's performance.
-                    </p>
-                  </div>
-                </li>
-                <li class="mega__menu__item">
-                  <div class="menu__icon">
-                    <i class="bx bx-knife"></i>
-                  </div>
-                  <div class="mega__menu__link">
-                    <a href="#">KwikRestra</a>
-                    <p>
-                      Optimize your restaurant operations with our Point of Sale
-                      platform, featuring table management, order tracking, and
-                      integrated payment solutions for a seamless dining
-                      experience.
-                    </p>
-                  </div>
-                </li>
-              </ul>
-              <ul class="mega__menu__content">
-                <li class="mega__menu__item mega__menu__header">
-                  Car Listing and Repair Management Platform
-                </li>
-                <li class="mega__menu__item">
-                  <div class="menu__icon">
-                    <i class="bx bxs-car"></i>
-                  </div>
-                  <div class="mega__menu__link">
-                    <a href="#">Kwikcars</a>
-                    <p>
-                      Discover your next vehicle with our comprehensive car
-                      listing site, featuring detailed listings, high-quality
-                      photos, and advanced search filters to help you find the
-                      perfect car quickly and easily.
-                    </p>
-                  </div>
-                </li>
-                <li class="mega__menu__item">
-                  <div class="menu__icon">
-                    <i class="bx bx-cog"></i>
-                  </div>
-                  <div class="mega__menu__link">
-                    <a href="#">AutoEasy</a>
-                    <p>
-                      Efficiently manage automotive repair services with our
-                      tool, featuring job scheduling, inventory tracking, and
-                      customer management to streamline your repair shop
-                      operations.
-                    </p>
-                  </div>
-                </li>
-              </ul>
-              <ul class="mega__menu__content">
-                <li class="mega__menu__item mega__menu__header">
-                  Trust Account Management Platform
-                </li>
-                <li class="mega__menu__item">
-                  <div class="menu__icon">
-                    <i class="bx bxs-bank"></i>
-                  </div>
-                  <div class="mega__menu__link">
-                    <a href="#">Just-Trust</a>
-                    <p>
-                      Simplify the management of trust accounts with our
-                      platform, offering secure fund tracking, automated
-                      reporting, and compliance features to ensure efficient and
-                      transparent trust administration.
-                    </p>
-                  </div>
-                </li>
-              </ul>
+            <div class="toggle__menu" id="toggle-menu">
+              <i class="bx bxs-grid-alt"></i>
             </div>
-          </li>
-          <li class="nav__item">
-            <a href="#" class="nav__link">Portfolio</a>
-          </li>
-          <li class="nav__item">
-            <a href="#" class="nav__link">Contact</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
+            <ul class="nav__list" id="nav-menu">
+              <div class="close__menu" id="close-menu">
+                <i class="bx bx-x"></i>
+              </div>
+              <li class="nav__item">
+                <a href="about.html" class="nav__link">Home</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">About</a>
+              </li>
+              <li class="nav__item dropdown">
+                <a href="#" class="nav__link dropdown__link"
+                  >Our Services
+                  <i class="bx bxs-chevron-down dropdown__icon"></i>
+                </a>
+                <!-- Mega Dropdown  -->
+                <div class="mega__menu">
+                  <ul class="mega__menu__content">
+                    <li class="mega__menu__item mega__menu__header">
+                      Computer Support
+                    </li>
+                    <li class="mega__menu__item">
+                      <div class="menu__icon">
+                        <i class="bx bx-desktop"></i>
+                      </div>
+                      <div class="mega__menu__link">
+                        <a href="#">Desktop Support</a>
+                        <p>
+                          Comprehensive troubleshooting, maintenance, and repair
+                          for desktop computers to minimize downtime and enhance
+                          productivity.
+                        </p>
+                      </div>
+                    </li>
+
+                    <li class="mega__menu__item">
+                      <div class="menu__icon">
+                        <i class="bx bx-laptop"></i>
+                      </div>
+                      <div class="mega__menu__link">
+                        <a href="#">Laptop Support</a>
+                        <p>
+                          Expert hardware repairs, software troubleshooting, and
+                          system upgrades to ensure optimal laptop performance.
+                        </p>
+                      </div>
+                    </li>
+                    <li class="mega__menu__item">
+                      <div class="menu__icon">
+                        <i class="bx bx-printer"></i>
+                      </div>
+                      <div class="mega__menu__link">
+                        <a href="#">Printer Support</a>
+                        <p>
+                          Complete assistance for printer setup, maintenance,
+                          and troubleshooting to keep your printing operations
+                          smooth.
+                        </p>
+                      </div>
+                    </li>
+                    <li class="mega__menu__item">
+                      <div class="menu__icon">
+                        <i class="bx bx-network-chart"></i>
+                      </div>
+                      <div class="mega__menu__link">
+                        <a href="#">Internet & Networking Support</a>
+                        <p>
+                          Reliable network setup, maintenance, and security
+                          solutions to ensure seamless connectivity and
+                          performance.
+                        </p>
+                      </div>
+                    </li>
+                    <li class="mega__menu__item">
+                      <div class="menu__icon">
+                        <i class="bx bx-cog"></i>
+                      </div>
+                      <div class="mega__menu__link">
+                        <a href="#">General Support</a>
+                        <p>
+                          Wide-ranging IT support for troubleshooting,
+                          maintenance, and optimization of all your technology
+                          needs.
+                        </p>
+                      </div>
+                    </li>
+                  </ul>
+                  <ul class="mega__menu__content">
+                    <li class="mega__menu__item mega__menu__header">
+                      SEO & Digital Marketing
+                    </li>
+                    <li class="mega__menu__item">
+                      <div class="menu__icon">
+                        <i class="bx bx-file-find"></i>
+                      </div>
+                      <div class="mega__menu__link">
+                        <a href="#">Search Engine Optimization (SEO)</a>
+                        <p>
+                          Optimize your website to rank higher on search
+                          engines, increase organic traffic, and improve online
+                          visibility.
+                        </p>
+                      </div>
+                    </li>
+                    <li class="mega__menu__item">
+                      <div class="menu__icon">
+                        <i class="bx bx-store-alt"></i>
+                      </div>
+                      <div class="mega__menu__link">
+                        <a href="#">Social Media Marketing</a>
+                        <p>
+                          Boost your brand presence and engage with your
+                          audience through strategic social media campaigns
+                          across various platforms.
+                        </p>
+                      </div>
+                    </li>
+                    <li class="mega__menu__item">
+                      <div class="menu__icon">
+                        <i class="bx bxs-business"></i>
+                      </div>
+                      <div class="mega__menu__link">
+                        <a href="#">Google Business Profile Management</a>
+                        <p>
+                          Enhance your local search presence by optimizing and
+                          managing your Google Business Profile for better
+                          visibility and customer engagement.
+                        </p>
+                      </div>
+                    </li>
+                  </ul>
+                  <ul class="mega__menu__content">
+                    <li class="mega__menu__item mega__menu__header">
+                      Website & Software development
+                    </li>
+                    <li class="mega__menu__item">
+                      <div class="menu__icon">
+                        <i class="bx bx-book-content"></i>
+                      </div>
+                      <div class="mega__menu__link">
+                        <a href="#">Custom Website Development</a>
+                        <p>
+                          Design and develop custom websites tailored to your
+                          business needs, ensuring a unique and engaging user
+                          experience.
+                        </p>
+                      </div>
+                    </li>
+                    <li class="mega__menu__item">
+                      <div class="menu__icon">
+                        <i class="bx bxl-internet-explorer"></i>
+                      </div>
+                      <div class="mega__menu__link">
+                        <a href="#">Web Application Development</a>
+                        <p>
+                          Create interactive and dynamic web applications to
+                          enhance user engagement and streamline business
+                          operations.
+                        </p>
+                      </div>
+                    </li>
+                    <li class="mega__menu__item">
+                      <div class="menu__icon">
+                        <i class="bx bx-devices"></i>
+                      </div>
+                      <div class="mega__menu__link">
+                        <a href="#">Mobile App Development</a>
+                        <p>
+                          Develop high-quality mobile applications for iOS and
+                          Android to reach and engage your audience on their
+                          favorite devices.
+                        </p>
+                      </div>
+                    </li>
+                    <li class="mega__menu__item">
+                      <div class="menu__icon">
+                        <i class="bx bx-desktop"></i>
+                      </div>
+                      <div class="mega__menu__link">
+                        <a href="#">Desktop Software Development</a>
+                        <p>
+                          Create powerful desktop applications to enhance
+                          productivity and streamline business processes.
+                        </p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="nav__item dropdown">
+                <a href="#" class="nav__link dropdown__link"
+                  >Our Products
+                  <i class="bx bxs-chevron-down dropdown__icon"></i>
+                </a>
+                <!-- Mega Dropdown  -->
+                <div class="mega__menu">
+                  <ul class="mega__menu__content">
+                    <li class="mega__menu__item mega__menu__header">
+                      Point-Of-Sale Platform
+                    </li>
+                    <li class="mega__menu__item">
+                      <div class="menu__icon">
+                        <i class="bx bx-store-alt"></i>
+                      </div>
+                      <div class="mega__menu__link">
+                        <a href="#">KwikPos</a>
+                        <p>
+                          Streamline your retail operations with our Point of
+                          Sale platform, offering efficient sales processing,
+                          inventory management, and real-time analytics to
+                          enhance your store's performance.
+                        </p>
+                      </div>
+                    </li>
+                    <li class="mega__menu__item">
+                      <div class="menu__icon">
+                        <i class="bx bx-knife"></i>
+                      </div>
+                      <div class="mega__menu__link">
+                        <a href="#">KwikRestra</a>
+                        <p>
+                          Optimize your restaurant operations with our Point of
+                          Sale platform, featuring table management, order
+                          tracking, and integrated payment solutions for a
+                          seamless dining experience.
+                        </p>
+                      </div>
+                    </li>
+                  </ul>
+                  <ul class="mega__menu__content">
+                    <li class="mega__menu__item mega__menu__header">
+                      Car Listing and Repair Management Platform
+                    </li>
+                    <li class="mega__menu__item">
+                      <div class="menu__icon">
+                        <i class="bx bxs-car"></i>
+                      </div>
+                      <div class="mega__menu__link">
+                        <a href="#">Kwikcars</a>
+                        <p>
+                          Discover your next vehicle with our comprehensive car
+                          listing site, featuring detailed listings,
+                          high-quality photos, and advanced search filters to
+                          help you find the perfect car quickly and easily.
+                        </p>
+                      </div>
+                    </li>
+                    <li class="mega__menu__item">
+                      <div class="menu__icon">
+                        <i class="bx bx-cog"></i>
+                      </div>
+                      <div class="mega__menu__link">
+                        <a href="#">AutoEasy</a>
+                        <p>
+                          Efficiently manage automotive repair services with our
+                          tool, featuring job scheduling, inventory tracking,
+                          and customer management to streamline your repair shop
+                          operations.
+                        </p>
+                      </div>
+                    </li>
+                  </ul>
+                  <ul class="mega__menu__content">
+                    <li class="mega__menu__item mega__menu__header">
+                      Trust Account Management Platform
+                    </li>
+                    <li class="mega__menu__item">
+                      <div class="menu__icon">
+                        <i class="bx bxs-bank"></i>
+                      </div>
+                      <div class="mega__menu__link">
+                        <a href="#">Just-Trust</a>
+                        <p>
+                          Simplify the management of trust accounts with our
+                          platform, offering secure fund tracking, automated
+                          reporting, and compliance features to ensure efficient
+                          and transparent trust administration.
+                        </p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">Portfolio</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="header__wrapper">
+        <div class="header__container">
+          <div class="header__item">
+            <img src="images/img-01.jpg" alt="Header Item Image" />
+            <div class="header__content__item">
+              <div class="header__content">
+                <div class="sub__title">COMPUTER REPAIR SERVICES</div>
+                <div class="title">Expert IT Support Services</div>
+                <div class="text">
+                  From troubleshooting to network setup, our team provides
+                  comprehensive IT support tailored to your business needs.
+                  Focus on what matters—let us handle your technology
+                  challenges.
+                </div>
+                <a href="#" class="btn">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
   </body>
 </html>
