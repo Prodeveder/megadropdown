@@ -16,6 +16,22 @@
     width: 1.2rem;
     height: 1.2rem;
   }
+
+  /* Header Card Container  */
+  .header__card__container {
+    top: -2rem;
+    gap: 1rem;
+  }
+
+  /* Header Card  */
+  .header__card {
+    height: 275px;
+  }
+
+  /* Header Card Wrapper  */
+  .header__card__wrapper {
+    height: 855px;
+  }
 }
 
 @media (max-width: 435px) {
@@ -93,6 +109,12 @@
   .mega__menu {
     justify-content: start;
     flex-wrap: wrap;
+  }
+
+  .header__content .title {
+    font-size: 3.8rem;
+    line-height: 3.5rem;
+    line-height: 3.4rem;
   }
 }
 
@@ -196,6 +218,42 @@
     font-size: 3.5rem;
     line-height: 3.2rem;
   }
+
+  /* Header Card Container  */
+  .header__card__container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* Header Card Wrapper  */
+  .header__card__wrapper {
+    height: 525px;
+  }
+
+  /* Header Card Container  */
+  .header__card__container {
+    height: auto;
+    /* top: -7rem; */
+  }
+
+  /* Header Card  */
+  .header__card {
+    height: 275px;
+  }
+  .header__card:last-child {
+    grid-column: 2 span;
+  }
+
+  /* Header Card Animation  Delay*/
+
+  .header__card:nth-child(1) {
+    animation-delay: 0.5s;
+  }
+  .header__card:nth-child(2) {
+    animation-delay: 1s;
+  }
+  .header__card:nth-child(3) {
+    animation-delay: 1.5s;
+  }
 }
 
 @media (max-width: 850px) {
@@ -243,6 +301,34 @@
   .header__content {
     width: calc(var(--width) - 5%);
   }
+  /* Header Card Container  */
+  .header__card__container {
+    width: calc(var(--width) - 5%);
+  }
+}
+
+@media (max-width: 650px) {
+  /* Header Card Container  */
+  .header__card__container {
+    grid-template-columns: 1fr;
+  }
+  /* Header Card  */
+  .header__card {
+    height: 275px;
+  }
+  .header__card:last-child {
+    grid-column: 1 span;
+  }
+
+  /* Header Card Wrapper  */
+  .header__card__wrapper {
+    height: 825px;
+  }
+
+    /* Header Content  Button*/
+    .header__content .btn {
+      margin: 0rem 0 1rem 0;
+    }
 }
 
 @media (max-width: 450px) {
@@ -271,15 +357,23 @@
 @media (max-width: 395px) {
   /* Header Content  */
   .header__content {
-    padding-top: 6rem;
+    padding-top: 2rem;
   }
 
-    /* Title Header Content  */
-    .header__content .title {
-        font-size: 2.3rem;
-        line-height: 2rem;
-        letter-spacing: -1px;
-        width: 100%;
-        min-width: 295px;
-      }
+  /* Title Header Content  */
+  .header__content .title {
+    font-size: 2.3rem;
+    line-height: 2rem;
+    letter-spacing: -1px;
+    width: 100%;
+    min-width: 295px;
+  }
+
+  /* Header Card Wrapper  */
+  .header__card__wrapper {
+    margin-top: 14rem;
+  }
+  .logo a {
+    font-size: 1.2rem;
+  }
 }
