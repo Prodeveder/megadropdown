@@ -385,8 +385,8 @@ header {
   height: auto;
 
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
 }
 
@@ -402,9 +402,10 @@ header {
   font-weight: bold;
   letter-spacing: -3px;
   color: var(--white);
-  width: 90%;
+  width: 100%;
   min-width: 750px;
   padding: 0.5rem 0;
+  text-align: center;
 }
 
 /* Text Header Content  */
@@ -413,6 +414,13 @@ header {
   opacity: 0.5;
   width: 75%;
   min-width: 650px;
+  text-align: center;
+}
+
+/* Header Content  Button*/
+.header__content .btn {
+  position: relative;
+  z-index: 1000;
 }
 
 /* Buttons  */
@@ -588,4 +596,49 @@ header {
 .header__card__content .btn:hover {
   background: var(--white);
   color: var(--accent);
+}
+
+/* Header Controls Wrapper  */
+.header__controls__wrapper {
+  position: absolute;
+  top: 40%;
+  width: 100%;
+  height: 3rem;
+  z-index: 999;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Header Controls Container */
+.header__controls__container {
+  width: 98%;
+  height: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Header Controls Container Icon*/
+.header__controls__container .ico {
+  width: 3rem;
+  height: 3rem;
+  border: 1px solid var(--white);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+}
+.header__controls__container .ico:hover {
+  background: var(--accent);
+  border: 1px solid var(--accent);
+}
+
+.header__controls__container .ico i {
+  font-size: 3rem;
+  color: var(--white);
 }
