@@ -1,0 +1,677 @@
+@import url("https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap");
+
+@font-face {
+  font-family: font;
+  src: url(font/SpaceGrotesk-VariableFont_wght.ttf);
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+
+  /* font-family: "Saira Condensed", sans-serif; */
+  /* font-family: "Playfair Display", serif; */
+
+  /* Font Pairing bebas &  */
+  /* font-family: "Bebas Neue", sans-serif; */
+  /* font-family: "Montserrat", sans-serif; */
+  font-family: "Space Grotesk", sans-serif;
+  font-family: font;
+}
+
+:root {
+  --width: 85%;
+
+  --black: black;
+  --white: white;
+  --red: #f9160e;
+  --accent: #26226f;
+  --accentDark: #14123b;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  background: var(--white);
+}
+
+/* Top Bar Wrapper  */
+.top__bar_wrapper {
+  width: 100%;
+  height: auto;
+
+  padding: 0.8rem 0;
+  background: var(--accentDark);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Top Bar Container  */
+.top__bar__container {
+  width: var(--width);
+  height: auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--white);
+}
+
+/* Top Bar List  */
+.top__bar__list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  list-style: none;
+
+  gap: 1rem;
+}
+
+/* Top Bar List link */
+.top__bar__list li {
+  cursor: pointer;
+}
+
+/* Top Bar List Link A */
+.top__bar__list li a {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.2rem;
+
+  color: var(--white);
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* Top Bar List SVG  */
+.top__bar__list li a svg {
+  fill: var(--red);
+  width: 1rem;
+  height: 1rem;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Top Bar List SVG Hover */
+.top__bar__list li:hover svg {
+  fill: var(--white);
+}
+
+/* Header  */
+.nav__wrapper {
+  position: relative;
+  width: 100%;
+  background: white;
+  z-index: 99;
+}
+
+/* Nav  */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: var(--width);
+  height: 4rem;
+  padding: 0;
+  margin: 0 auto;
+  z-index: 999;
+}
+
+/* Toggle & Close Menu  */
+.toggle__menu,
+.close__menu {
+  display: none;
+}
+
+/* Toggle & Close Menu  */
+.toggle__menu i,
+.close__menu i {
+  font-size: 2rem;
+  color: var(--accent);
+}
+
+/* Logo  */
+.logo a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: -2px;
+  color: var(--accent);
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  gap: 0.2rem;
+}
+
+.logo a img {
+  width: 2rem;
+  object-fit: cover;
+}
+
+/* Nav List  */
+.nav__list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/* Nav Item  */
+.nav__item {
+  /* margin: 0 0 0 1.5rem; */
+
+  padding: 1.4rem 0;
+}
+
+.nav__item:last-child {
+  padding: 0.6rem 1.3rem;
+  margin-left: 1rem;
+  border-radius: 0.1rem;
+  background: var(--red);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.nav__item:last-child:hover {
+  background: var(--accent);
+  box-shadow: 0;
+}
+
+.nav__item:last-child a {
+  color: var(--white);
+  font-weight: bold;
+}
+.nav__item:last-child:hover a {
+  color: var(--white);
+  box-shadow: 0;
+}
+
+/* Nav Link  */
+.nav__link {
+  font-weight: bold;
+  height: 100%;
+  padding: 1.4rem 0;
+  padding: 1.4rem 0.7rem 1.4rem 0.7rem;
+
+  color: var(--accent);
+}
+
+.nav__item:hover .nav__link {
+  color: var(--red);
+  box-shadow: inset 0 -2px var(--red);
+}
+.nav__item:last-child:hover .nav__link {
+  box-shadow: inset 0 -2px transparent;
+}
+
+/* Dropdown Link  */
+.dropdown__link {
+  display: flex;
+  align-items: center;
+}
+
+/* Dropdown Icon  */
+.dropdown__icon {
+  font-size: 1.3rem;
+}
+
+/* Mega Menu  */
+.mega__menu {
+  position: absolute;
+  width: 100%;
+  top: 4rem;
+  left: 0;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  border-radius: 0 0 0.2rem 0.2rem;
+  box-shadow: 0 23px 23px -21px rgb(0 0 0 / 0.25);
+  z-index: -99;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateX(-100vh);
+  transition: all 0.3s ease;
+}
+
+/* Mega Menu Content  */
+.mega__menu__content {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 1rem;
+}
+
+/* Mega Menu Item  */
+.mega__menu__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+/* Mega Menu Header  */
+.mega__menu__header {
+  font-weight: bold;
+  font-size: 1.2rem;
+  letter-spacing: -1px;
+  color: var(--accent);
+  margin-bottom: 1rem;
+}
+
+/* Menu Icon  */
+.menu__icon {
+  width: 2rem;
+  height: 2rem;
+  min-width: 2rem;
+  max-height: 2rem;
+  border-radius: 50%;
+  background: #efeef1;
+  margin-right: 0.5rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu__icon i {
+  font-size: 1rem;
+  color: var(--accent);
+}
+
+/* Menu Link  */
+.mega__menu__link a {
+  font-weight: 500;
+  font-size: 1.1rem;
+  color: #000;
+}
+
+.mega__menu__link a:hover {
+  color: var(--accent);
+  text-decoration: underline;
+}
+
+.mega__menu__link p {
+  font-size: 0.6875rem;
+  font-weight: 400;
+  color: #a8a1b5;
+  font-size: 12px;
+}
+
+/* Dropdown Animation  */
+@keyframes dropdown {
+  to {
+    transform: translateY(0vh);
+    opacity: 1;
+  }
+}
+/* Dropdown Active and Hover  */
+.dropdown:active .mega__menu,
+.dropdown:hover .mega__menu {
+  color: var(--accent);
+  visibility: visible;
+  animation: dropdown 1s ease-in-out forwards;
+}
+
+/* Dropdown Icon Hover  */
+.nav__item:active .dropdown__icon .nav__item:hover .dropdown__icon {
+  transform: rotate(180deg);
+  transition: all 0.3s ease;
+}
+
+/* Buttons  */
+.btn {
+  margin: 1rem 0;
+  background: var(--accent);
+  padding: 0.6rem 1.3rem;
+
+  border-radius: 0.1rem;
+
+  font-weight: bold;
+  color: var(--white);
+  transition: all 0.2s ease-in-out;
+}
+
+.btn:hover {
+  background: var(--red);
+}
+
+/* Header Navigation  */
+.header__navigation {
+  width: 100%;
+  position: absolute;
+  z-index: 999;
+}
+
+/* Header Container  */
+.header__container {
+  width: 100%;
+  height: 800px;
+  background: var(--white);
+  position: relative;
+}
+
+/* Header Items  */
+.header__items {
+  width: 100%;
+  height: 100%;
+}
+
+/* Header Item  */
+.header__item {
+  position: relative;
+
+  width: 100%;
+  height: 100%;
+}
+
+/* Header Item Image  */
+.header__item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: contrast(1.1) saturate(1.5);
+}
+
+/* Header Content Wrapper */
+.header__content__wrapper {
+  width: 100%;
+  height: 100%;
+
+  position: absolute;
+  top: 0;
+  background: rgb(0 0 0 / 0.5);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Header Content  */
+.header__content {
+  position: relative;
+  top: -1rem;
+  width: var(--width);
+  height: auto;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+/* Header Content Sub  */
+.header__content .sub {
+  color: var(--white);
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+
+  /* Animation Value  */
+  opacity: 0;
+  transform: translateY(4rem);
+  animation-delay: 0;
+}
+
+/* Header Content Title  */
+.header__content .title {
+  font-size: 4rem;
+  line-height: 4rem;
+  font-weight: bold;
+  letter-spacing: -5px;
+  color: var(--white);
+  width: 750px;
+  padding: 1rem 0;
+
+  /* Animation Value  */
+  opacity: 0;
+  transform: translateY(4rem);
+  animation-delay: 0.4s;
+}
+
+/* Header Content Text  */
+.header__content .text {
+  color: var(--white);
+  width: 750px;
+  font-weight: 100;
+  opacity: 0.8;
+
+  /* Animation Value  */
+  opacity: 0;
+  transform: translateY(4rem);
+  animation-delay: 0.8s;
+}
+
+/* Header Content Button   */
+.header__content .btn {
+  /* Animation Value  */
+  opacity: 0;
+  transform: translateY(4rem);
+  animation-delay: 1.2s;
+}
+.header__content .btn:hover {
+  background: var(--white);
+  color: var(--accent);
+}
+
+/* Header Content Animation  */
+@keyframes HeaderAnimate {
+  to {
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateY(0);
+  }
+}
+
+.headerAnimate {
+  animation: HeaderAnimate 2s ease-in-out forwards;
+}
+
+/* Header Control Wrapper  */
+.header__control__wrapper {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Header Control  */
+.header__control {
+  width: var(--width);
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* Header Control Items  */
+.header__control .control {
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 1px solid var(--white);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: var(--white);
+}
+
+.header__control__wrapper .control:hover {
+  background: var(--accent);
+  border: 1px solid var(--accent);
+}
+
+/* Header Active Wrapper  */
+.header__active__wrapper {
+  position: absolute;
+  bottom: 9rem;
+
+  width: 100%;
+  height: 2rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Header Active  */
+.header__active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  width: var(--width);
+}
+.header__active__wrapper .dot {
+  color: var(--white);
+}
+.header__active__wrapper .dot.active {
+  color: var(--accent);
+  font-size: 1.5rem;
+}
+
+/* Header Card Wrapper  */
+.header__card__wrapper {
+  width: 100%;
+  height: 164px;
+
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Header Card Container  */
+.header__card__container {
+  width: var(--width);
+  height: 240px;
+
+  position: absolute;
+  top: -120px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+/* Header Card Item  */
+.header__card__item {
+  width: 100%;
+  height: 100%;
+  max-height: 240px;
+  background: var(--white);
+  box-shadow: 0 0 10px rgb(0 0 0 / 0.2);
+  border-radius: 0.1rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+/* Header Card Content  */
+.header__card__content {
+  width: 88%;
+  height: 85%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* Header Card Content Icon  */
+.header__card__content .icon {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--accent);
+  font-size: 2rem;
+  background: #efeef1;
+}
+
+
+/* Header Card Content Title  */
+.header__card__content .title {
+  font-weight: 700;
+  font-size: 1.2rem;
+  font-size: -0.5px;
+
+  width: 100%;
+}
+
+/* Header Card Hovered Item  */
+.header__card__hovered {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--accent);
+  border-radius: 0.1rem;
+  /* display: none; */
+  opacity: 0;
+  transform: translateX(-100vw);
+
+  animation: hoveredCard 0.4s ease-in-out forwards;
+
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__card__hovered p {
+  text-align: center;
+  color: var(--white);
+}
+
+.header__card__hovered .header__card__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.header__card__hovered a {
+  background: var(--white);
+  color: var(--accent);
+  margin: 0;
+}
+.header__card__hovered a:hover {
+  background: var(--white);
+  opacity: 0.7;
+}
+
+.header__card__item:hover .header__card__hovered {
+  display: flex;
+}
+
+@keyframes hoveredCard {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
