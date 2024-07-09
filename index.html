@@ -12,6 +12,8 @@
       rel="stylesheet"
     />
     <script src="script.js" defer></script>
+    <script src="slideshow.js" defer></script>
+
   </head>
   <body>
     <header>
@@ -453,7 +455,53 @@
       <div class="header__container">
         <div class="header__items">
           <div class="header__item">
-            <img src="images/img-01.jpg" alt="" />
+            <img src="images/img-01.jpg" alt="" class="animate"/>
+            <div class="header__content__wrapper">
+              <div class="header__content">
+                <div class="sub headerAnimate">
+                  Computer Application Technology
+                </div>
+                <div class="title headerAnimate">
+                  Computer Application Technology is the way forward
+                </div>
+                <div class="text headerAnimate">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
+                  dolorum doloremque totam natus blanditiis temporibus, veniam
+                  tempora optio. Quibusdam eius ab iste ad, numquam beatae
+                  eveniet voluptatibus voluptates aperiam cupiditate!
+                </div>
+
+                <a href="" class="btn headerAnimate">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header__items">
+          <div class="header__item">
+            <img src="images/img-02.jpg" alt="" class="animate"/>
+            <div class="header__content__wrapper">
+              <div class="header__content">
+                <div class="sub headerAnimate">
+                  Computer Application Technology
+                </div>
+                <div class="title headerAnimate">
+                  Computer Application Technology is the way forward
+                </div>
+                <div class="text headerAnimate">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
+                  dolorum doloremque totam natus blanditiis temporibus, veniam
+                  tempora optio. Quibusdam eius ab iste ad, numquam beatae
+                  eveniet voluptatibus voluptates aperiam cupiditate!
+                </div>
+
+                <a href="" class="btn headerAnimate">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header__items">
+          <div class="header__item">
+            <img src="images/img-03.jpg" alt="" class="animate"/>
             <div class="header__content__wrapper">
               <div class="header__content">
                 <div class="sub headerAnimate">
@@ -476,8 +524,8 @@
         </div>
         <div class="header__control__wrapper">
           <div class="header__control">
-            <div class="control prev"><i class="bx bxs-chevron-left"></i></div>
-            <div class="control next"><i class="bx bxs-chevron-right"></i></div>
+            <div class="control prev" onclick="plusSlides(-1)"><i class="bx bxs-chevron-left"></i></div>
+            <div class="control next" onclick="plusSlides(1)"><i class="bx bxs-chevron-right"></i></div>
           </div>
         </div>
         <div class="header__active__wrapper">

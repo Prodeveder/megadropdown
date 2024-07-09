@@ -366,6 +366,8 @@ nav {
 .header__items {
   width: 100%;
   height: 100%;
+
+  display: none;
 }
 
 /* Header Item  */
@@ -382,6 +384,19 @@ nav {
   height: 100%;
   object-fit: cover;
   filter: contrast(1.1) saturate(1.5);
+}
+
+@keyframes animateImage {
+  from {
+    opacity: .2;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.header__item img.animate {
+  animation: animateImage 2s ease-in-out forwards;
 }
 
 /* Header Content Wrapper */
