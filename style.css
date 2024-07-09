@@ -32,6 +32,8 @@
   --red: #f9160e;
   --accent: #26226f;
   --accentDark: #14123b;
+
+  --grey: #efeef1;
 }
 
 a {
@@ -388,7 +390,7 @@ nav {
 
 @keyframes animateImage {
   from {
-    opacity: .2;
+    opacity: 0.2;
   }
   to {
     opacity: 1;
@@ -559,7 +561,13 @@ nav {
 }
 .header__active__wrapper .dot {
   color: var(--white);
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
 }
+.header__active__wrapper .dot:hover {
+  color: var(--accentDark);
+}
+
 .header__active__wrapper .dot.active {
   color: var(--accent);
   font-size: 1.5rem;
@@ -629,12 +637,12 @@ nav {
   background: #efeef1;
 }
 
-
 /* Header Card Content Title  */
 .header__card__content .title {
   font-weight: 700;
   font-size: 1.2rem;
   font-size: -0.5px;
+  color: var(--accentDark);
 
   width: 100%;
 }
@@ -689,4 +697,213 @@ nav {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+/* Section  */
+section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 2rem 0;
+}
+
+/* About Us Wrapper  */
+.about__us__wrapper {
+  width: var(--width);
+  height: auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  margin-bottom: 10rem;
+
+}
+
+/* About Us  Image  */
+.about__us__image {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+}
+
+.about__us__image img {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  width: 95%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.2rem;
+}
+
+/* About Us Image Holder  */
+.about__us__image__holder {
+  width: 10rem;
+  height: 80%;
+  background: var(--accent);
+  border-radius: 0.2rem;
+}
+
+/* About Us Border  */
+.about__us__border {
+  position: absolute;
+  top: 0;
+  right: 50%;
+  background: var(--white);
+
+  width: 0.5rem;
+  height: 100%;
+  object-fit: cover;
+  animation: animateAboutImage 3s ease-in-out forwards;
+}
+
+/* About Us Image Animation  */
+@keyframes animateAboutImage {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(100px);
+  }
+}
+
+/* About Us Banner  */
+.about__us__banner {
+  position: absolute;
+  bottom: 2.5rem;
+  right: -2rem;
+
+  box-shadow: 0 0 10px rgb(0 0 0 / 0.1);
+  background: var(--white);
+  width: 250px;
+  height: 100px;
+  border-radius: 0.2rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: all 0.2s ease-in-out;
+}
+
+.about__us__banner:hover {
+  background: var(--accent);
+}
+
+/* About Us Banner Content  */
+.banner__content {
+  width: 90%;
+  height: 85%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+  font-size: 1.5rem;
+  color: var(--accent);
+  position: relative;
+}
+
+/* Banner Content Icon  */
+.banner__content .icon {
+  background: var(--grey);
+  width: 5rem;
+  height: 3rem;
+  border-radius: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Banner Content Span  */
+.banner__content span {
+  font-size: 1rem;
+  font-weight: bold;
+  transition: all 0.2s ease-in-out;
+}
+
+.about__us__banner:hover span {
+  color: var(--white);
+}
+
+/* About Content Wrapper  */
+.about__content__wrapper {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 0.5rem;
+
+}
+
+/* About Content Wrapper Sub  */
+.about__content__wrapper .sub {
+  color: var(--accent);
+  font-weight: 100;
+}
+
+/* About Content Wrapper Title  */
+.about__content__wrapper .title {
+  font-size: 3rem;
+  line-height: 2.5rem;
+  font-weight: bold;
+  color: var(--accentDark);
+  padding: 0.5rem 0;
+}
+
+/* About Content Wrapper Text  */
+.about__content__wrapper .text {
+  font-weight: 100;
+  color: var(--accentDark);
+  opacity: 0.8;
+  padding: 0 0 0.5rem 0;
+}
+
+/* About Content Wrapper List  */
+.about__content__wrapper ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0.5rem 0;
+}
+
+.about__content__wrapper ul li {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.2rem;
+  font-size: 1.5rem;
+  color: var(--accent);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.about__content__wrapper ul li:hover {
+  padding-left: 1rem;
+}
+
+.about__content__wrapper ul li span {
+  font-size: 1rem;
+  color: var(--accentDark);
+}
+
+/* About Content Wrapper Button  */
+.about__content__wrapper .btn {
+  margin: 0px;
+}
+.about__content__wrapper .btn:hover {
+  background: var(--accent);
+  filter: brightness(.7);
 }
