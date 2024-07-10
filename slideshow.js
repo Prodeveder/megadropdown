@@ -64,3 +64,17 @@ document.addEventListener("DOMContentLoaded", () => {
   initSlides();
   addDotListeners();
 });
+
+
+const servicesToggles = document.querySelectorAll('.service__toggle');
+
+const clearActiveServicesToggle = () => {
+  servicesToggles.forEach( (Element) => {
+    Element.classList.remove('active')
+  })
+}
+
+const servicesToggle = (index) => {
+  clearActiveServicesToggle();
+  servicesToggles[index].classList.add('active')
+}

@@ -34,6 +34,7 @@
   --accentDark: #14123b;
 
   --grey: #efeef1;
+  --greyDark: #a8a1b5;
 }
 
 a {
@@ -688,6 +689,8 @@ nav {
   opacity: 0.7;
 }
 
+.header__card__item:focus .header__card__hovered,
+.header__card__item:active .header__card__hovered,
 .header__card__item:hover .header__card__hovered {
   display: flex;
 }
@@ -705,6 +708,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 
   padding: 2rem 0;
 }
@@ -717,8 +721,6 @@ section {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 3rem;
-  margin-bottom: 10rem;
-
 }
 
 /* About Us  Image  */
@@ -845,7 +847,6 @@ section {
   align-items: flex-start;
   flex-direction: column;
   gap: 0.5rem;
-
 }
 
 /* About Content Wrapper Sub  */
@@ -861,14 +862,17 @@ section {
   font-weight: bold;
   color: var(--accentDark);
   padding: 0.5rem 0;
+  letter-spacing: -2px;
 }
 
 /* About Content Wrapper Text  */
 .about__content__wrapper .text {
   font-weight: 100;
+  filter: brightness(0.5);
   color: var(--accentDark);
   opacity: 0.8;
   padding: 0 0 0.5rem 0;
+  text-shadow: 1px 1px 2px rgb(0 0 0 / 0.2);
 }
 
 /* About Content Wrapper List  */
@@ -879,6 +883,7 @@ section {
   padding: 0.5rem 0;
 }
 
+/* About Content Wrapper List L  */
 .about__content__wrapper ul li {
   display: flex;
   justify-content: flex-start;
@@ -893,7 +898,7 @@ section {
 .about__content__wrapper ul li:hover {
   padding-left: 1rem;
 }
-
+/* About Content Wrapper List L span */
 .about__content__wrapper ul li span {
   font-size: 1rem;
   color: var(--accentDark);
@@ -905,5 +910,274 @@ section {
 }
 .about__content__wrapper .btn:hover {
   background: var(--accent);
-  filter: brightness(.7);
+  filter: brightness(0.7);
 }
+
+/* Divider  */
+.divider {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0;
+}
+.divide {
+  width: var(--width);
+  height: 3px;
+  background: var(--grey);
+  border: none;
+}
+
+/* Services Header  */
+.section__header {
+  width: var(--width);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 0 2rem 0;
+}
+
+/* Services Header Sub */
+.section__header .sub {
+  color: var(--accent);
+  font-weight: 100;
+}
+
+/* Services Header Title */
+.section__header .title {
+  font-size: 3rem;
+  line-height: 2.5rem;
+  font-weight: bold;
+  color: var(--accentDark);
+  padding: 0.5rem 0;
+  letter-spacing: -2px;
+}
+
+/* Services Header P */
+.section__header p {
+  font-weight: 100;
+  color: var(--accentDark);
+  opacity: 0.8;
+  text-shadow: 1px 1px 2px rgb(0 0 0 / 0.2);
+  filter: brightness(0.5);
+  text-align: center;
+  width: 90%;
+  max-width: 800px;
+}
+
+/* Services Wrapper  */
+.services__wrapper {
+  width: var(--width);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Services Header  */
+.services__header {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border-bottom: 3px solid var(--grey);
+  position: relative;
+}
+
+/* Service Toggle  */
+.service__toggle {
+  position: relative;
+  bottom: -3px;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem 0;
+  color: var(--accent);
+  font-size: 1.1rem;
+  letter-spacing: -1px;
+  font-weight: 700;
+  transition: all 0.2s ease-in-out;
+}
+
+.service__toggle:hover {
+  box-shadow: inset 0 -3px var(--accent);
+  background: var(--grey);
+  cursor: pointer;
+}
+
+.service__toggle.active {
+  box-shadow: inset 0 -3px var(--accent);
+  background: var(--grey);
+}
+
+/* Services Toggle Icon  */
+.service__toggle .icon {
+  font-size: 1.5rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Services Container  */
+.services__container {
+  padding: 2rem 0;
+  width: var(--width);
+}
+
+/* Services Grid  */
+.services__grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+/* Service Header  */
+.service__header {
+  width: 100%;
+  height: auto;
+  background: var(--grey);
+  border-radius: 0.2rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem 0;
+  gap: 0.5rem;
+  box-shadow: inset 0 -5px var(--accent);
+}
+
+/* Service Header Content  */
+.service__header .content {
+  width: 85%;
+  height: 85%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Service Header Content  Title*/
+.service__header .content .title {
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 1.15rem;
+  color: var(--accent);
+  text-align: center;
+}
+
+/* Service Header Content  P*/
+.service__header .content p {
+  font-weight: 100;
+  color: var(--accentDark);
+  opacity: 0.8;
+  text-shadow: 1px 1px 2px rgb(0 0 0 / 0.2);
+  filter: brightness(0.5);
+  text-align: center;
+  width: 100%;
+  font-size: 14px;
+  padding: 1rem 0;
+}
+
+/* Service Header Content  Btn*/
+.service__header .content .btn {
+  margin: 0;
+}
+
+.service__header .content .btn:hover {
+  background: var(--white);
+  color: var(--accent);
+}
+
+/* Service Items  */
+.service__items {
+  width: 95%;
+  height: auto;
+  margin-left: 2rem;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+/* Service Item  */
+.service__item {
+  width: 100%;
+  height: auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: .2rem;
+  cursor: pointer;
+  /* padding: 0 0.5rem; */
+  transition: all .2s ease-in-out;
+}
+
+/* Service Item Title */
+.service__item .title {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  gap: .5rem;
+  color: var(--accent);
+  font-weight: 700;
+  font-size: 1.2rem;
+  letter-spacing: -1px;
+  transition: all .2s ease-in-out;
+}
+
+
+/* Service Item Title Icon*/
+.service__item .title .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  width: 1.8;
+}
+
+/* Service Item P */
+.service__item p {
+  font-weight: 100;
+  color: var(--accentDark);
+  opacity: 0.8;
+  text-shadow: 1px 1px 2px rgb(0 0 0 / 0.2);
+  filter: brightness(0.5);
+  width: 100%;
+  font-size: 14px;
+  padding: 0 0 0 1.8rem;
+}
+
+/* Service Item Read More */
+.service__item .read__more {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0rem;
+  font-size: 16px;
+  opacity: 1;
+  transition: all .2s ease-in-out;
+  color: var(--accentDark);
+  padding: .1rem 0 0 1.8rem;
+}
+.service__item:hover .read__more {
+  gap: .6rem;
+  font-weight: 700;
+}
+
+
+
+
+
+
+
+
+
+
