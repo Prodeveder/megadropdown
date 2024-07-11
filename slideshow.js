@@ -65,16 +65,27 @@ document.addEventListener("DOMContentLoaded", () => {
   addDotListeners();
 });
 
+const servicesToggles = document.querySelectorAll(".service__toggle");
+const servicesGrids = document.querySelectorAll(".services__grid");
 
-const servicesToggles = document.querySelectorAll('.service__toggle');
 
-const clearActiveServicesToggle = () => {
-  servicesToggles.forEach( (Element) => {
-    Element.classList.remove('active')
-  })
+servicesGrids[0].style.display = "grid";
+
+
+const clearActiveServices = () => {
+  // Services Toggles 
+  servicesToggles.forEach((Element) => {
+    Element.classList.remove("active");
+  });
+
+  // Services Grids 
+  servicesGrids.forEach((Element) => {
+    Element.style.display = "none";
+  });
 }
 
 const servicesToggle = (index) => {
-  clearActiveServicesToggle();
-  servicesToggles[index].classList.add('active')
-}
+  clearActiveServices();
+  servicesToggles[index].classList.add("active");
+  servicesGrids[index].style.display = "grid";
+};

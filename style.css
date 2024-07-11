@@ -1030,7 +1030,7 @@ section {
 /* Services Grid  */
 .services__grid {
   width: 100%;
-  display: grid;
+  display: none;
   grid-template-columns: 1fr 2fr;
 }
 
